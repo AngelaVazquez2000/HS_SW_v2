@@ -1,0 +1,279 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* inico del encabezado */
+
+.CONTENEDOR{
+    padding: 60PX O;
+    width: 90%;
+    max-width: 1000PX;
+    margin: auto;
+    overflow: hidden;
+}
+
+.TITULO{
+    COLOR: #21be3b;
+    font-size: 30PX;
+    text-align: center;
+    margin-bottom: 60PX ;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    height: 700PX;
+    background:linear-gradient(120deg, #d5fc795b 0%, #96e6a150 100%);background-image: linear-gradient(120deg, #5072da7f 0%, #33df1563 100%), url(../imagenes/inicio_1.png);
+    background-size: COVER;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30PX 50PX 0 0;
+
+}
+
+nav > A {
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10PX;
+}
+
+nav > A:hover {
+    text-decoration: overline;
+    
+}
+
+.WAVE{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* inicio de la parte media (Objetivos) */
+
+
+.CONTENEDOR-SOBRE-NOSOTROS{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.TEXTOS-HEADER{
+    font-size: 50PX;
+    color: #FFF;
+    display: flex;
+    height: 500PX;
+    width: 100%;
+    align-items: CENTER;
+    justify-content: center;
+    flex-direction: column;
+   
+
+}
+
+.TEXTOS-HEADER H2{
+    font-size: 30PX;
+    font-weight: 300;
+    color: #FFF;
+    display: flex;
+    align-items: CENTER;
+    justify-content: center;
+}
+
+/* Galeria de post  */
+
+.IMAGEN-US{
+    max-width: 250px;
+    max-height: 250px;
+    padding: 0;
+}
+
+.CONTENEDOR-SOBRE-NOSOTROS .CONTENIDO-TEXTOS{
+    width: 40%;
+
+}
+
+
+.CONTENIDO-TEXTOS H3{
+    margin-bottom: 15PX;
+}
+
+.CONTENIDO-TEXTOS H3 SPAN{
+    background: #0fc32d;
+    color: #FFF;
+    border-radius:  50%;
+    display: inline-block;
+    text-align: center;
+    width: 30PX;
+    height: 30PX;
+    padding: 2PX;
+    box-shadow: 0 0 6PX 0 rgba(0, 0, 0, .5) ; 
+}
+
+.CONTENIDO-TEXTOS P{
+    padding: 0PX 10PX 30PX 15PX;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/* GARELIRA */
+
+.PORTAFOLIO{
+    background: #FFF;
+}
+
+.GALERIA-PORTAFOLIO{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.IMG_PORT{
+    width: 24%;
+    margin-bottom: 10PX;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6PX rgba(0, 0, 0, .5)
+    
+}
+
+.IMG_PORT >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(117, 100%, 51%, 0.34);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+
+}
+.hover-galeria p{
+    color: #FFF;
+}
+
+.IMG_PORT:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+/* frases */
+
+.TARJETAS{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.TARJETAS .TARJETA{
+    background: #027d1662;
+    display: FLEX;
+    width: 35%;
+    height: 200PX;
+    align-items: CENTER;
+    justify-content: space-evenly;
+    border-radius: 20PX;
+    box-shadow: 0 0 6PX 0 rgba(0, 0, 0, .6);
+}
+
+
+.TARJETAS .TARJETA .contenido_frase_tarjeta {
+    width: 80%;
+    color: #FFF;
+    padding: 0PX 0PX 30PX 15PX;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.TARJETAS .TARJETA .contenido_frase_tarjeta P{
+    width: 80%;
+    color: #FFF;
+    padding: 0PX 0PX 30PX 15PX;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/* PIE DE PAGINA */
+
+.PIE_PAGINA{
+    width: 100%;
+    padding: 30PX;
+    background-color: hwb(205 11% 35% / 0.556)
+
+}
+
+.PIE_PAGINA .GRUP_1{
+    width: 100%;
+    max-width: 1200PX;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1FR);
+    GRID-GAP: 50PX;
+    padding: 15PX 0PX;
+}
+
+.PIE_PAGINA .GRUP_1 .BOX FIGURE{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: CENTER;
+    align-items: center;
+}
+
+.PIE_PAGINA .GRUP_1 .BOX FIGURE IMG{
+    width: 100PX;
+}
+
+.PIE_PAGINA .GRUP_1 H2{
+    color: #FFF;
+    margin-bottom: 25PX;
+    font-size: 20PX;
+}
+
+.PIE_PAGINA .GRUP_1 P{
+    color: #FFF;
+    margin-bottom: 10PX;
+}
+
+.PIE_PAGINA .GRUP_1 .REDSOCIAL a{
+    display: flex;
+    flex-direction: WRAP;
+    MAX-width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    padding-bottom: 20PX;
+
+}
+
+.PIE_PAGINA .GRUP_2{
+    background-color: rgba(18, 42, 197, 0.288);
+    padding: 15PX 10PX;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.47);
+}
